@@ -18,7 +18,19 @@ ThemeData lightmode = ThemeData(
     inversePrimary: HexColors.fromHex(
       '#e288a3',
     ), //special color for contrasting elements
+    
   ),
+  textTheme: TextTheme(
+    headlineLarge:TextStyle(
+      color: HexColors.fromHex('#1d775c')
+    ),
+    titleMedium:TextStyle(
+      color: HexColors.fromHex('#1d775c')
+    ),
+    labelMedium:TextStyle(
+      color: HexColors.fromHex('#0c1d18')
+    ),
+  )
 );
 
 
