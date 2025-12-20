@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_ecommerce/pages/homePage.dart';
-import 'package:minimal_ecommerce/pages/introPage.dart';
+import 'package:minimal_ecommerce/pages/home_page.dart';
+import 'package:minimal_ecommerce/pages/intro_page.dart';
 import 'package:minimal_ecommerce/theme/lightmode.dart';
 
 void main() {

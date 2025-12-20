@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:minimal_ecommerce/components/drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -20,7 +21,10 @@ class Homepage extends StatelessWidget {
             ),
           ),
         ),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      ),
+      drawer: AppDrawer(
+        onTap: null,
       ),
       body: Center(
         child: Text('Home Page'),
