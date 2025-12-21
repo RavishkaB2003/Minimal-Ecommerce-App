@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:minimal_ecommerce/components/drawer.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -22,9 +21,6 @@ class CartPage extends StatelessWidget {
           ),
         ),
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      ),
-      drawer: AppDrawer(
-        onTap: null,
       ),
       body: Center(
         child: Text('Cart Page'),

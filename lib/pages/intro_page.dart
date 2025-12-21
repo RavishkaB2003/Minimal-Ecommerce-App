@@ -50,7 +50,7 @@ class Intropage extends StatelessWidget {
             //get started button
             SizedBox(height: 30),
             Button(
-              onTap: () => Navigator.pushNamed(context, '/home'),
+              onTap: () => Navigator.pushNamed(context, '/shop'),
               child: Icon(
                 Icons.arrow_forward,
                 color: Theme.of(context).textTheme.labelMedium?.color,
