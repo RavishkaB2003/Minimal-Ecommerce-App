@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_ecommerce/components/my_ListTile.dart';
 
 class AppDrawer extends StatelessWidget {
   final void Function()? onTap;
@@ -39,17 +40,32 @@ class AppDrawer extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primary,
                       ),
                   ),
-
-
                 //shop tile
+                MyListTile(
+                  icon: Icons.shopping_bag,
+                  text: 'Shop',
+                  onTap: () => Navigator.pushNamed(context, '/shop'),
+                ),
+                SizedBox(height: 10),
                 //cart tile
+                MyListTile(
+                  icon: Icons.shopping_cart,
+                  text: 'Cart',
+                  onTap: () => Navigator.pushNamed(context, '/cart'),
+                ),
+                SizedBox(height: 10),
                   //exit tile
+                
                 
               ],
             
             ),
-          )
-        
+          ),
+        MyListTile(
+                  text: 'Exit',
+                  icon: Icons.exit_to_app,
+                  onTap: () => Navigator.pushNamed(context, '/intro')
+                ),
         ],
       ),
     );
