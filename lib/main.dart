@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_ecommerce/pages/cart_page.dart';
 import 'package:minimal_ecommerce/pages/home_page.dart';
 import 'package:minimal_ecommerce/pages/intro_page.dart';
+import 'package:minimal_ecommerce/pages/shop_page.dart';
 import 'package:minimal_ecommerce/theme/lightmode.dart';
 
 void main() {
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/intro': (context) => Intropage(),
         '/home': (context) => Homepage(),
+        '/shop': (context) => ShopPage(),
+        '/cart': (context) => CartPage(),
       },
     );
   }
