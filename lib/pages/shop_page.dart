@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:minimal_ecommerce/components/drawer.dart';
 import 'package:minimal_ecommerce/components/my_productTile.dart';
-import 'package:minimal_ecommerce/models/products.dart';
 import 'package:minimal_ecommerce/models/shop.dart';
 import 'package:provider/provider.dart';
 
