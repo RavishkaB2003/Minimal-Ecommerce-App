@@ -16,6 +16,17 @@ class ShopPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/cart');
+            },
+            icon: Icon(
+              Icons.shopping_cart,
+              color: Theme.of(context).iconTheme.color,
+            ),
+          ),
+        ],
         centerTitle: true,
         title: Text(
           'Shop',

@@ -56,14 +56,16 @@ class MyProducttile extends StatelessWidget {
               AspectRatio(
                 aspectRatio: 1,
                 child: Container(
+                  clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(16),
                   ),
-                  width: double.infinity,
-                  padding: EdgeInsets.all(10),
-                  child: Icon(Icons.favorite),
+                  child: Image.asset(
+                    product.imageUrl,
+                    fit: BoxFit.fill,
                 ),
+              ),
               ),
 
               SizedBox(height: 15),
